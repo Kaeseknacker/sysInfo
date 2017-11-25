@@ -5,18 +5,23 @@
 #-------------------------------------------------
 
 QT       += core gui
+CONFIG   += C++14
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = sysInfo
 TEMPLATE = app
 
-
 SOURCES += main.cpp\
-        MainWindow.cpp \
+    MainWindow.cpp \
     SysInfo.cpp
 
 HEADERS  += MainWindow.h \
     SysInfo.h
+
+windows {
+    SOURCES += SysInfoWindowsImpl.cpp
+    HEADERS += SysInfoWindowsImpl.h
+}
 
 FORMS    += MainWindow.ui
