@@ -14,10 +14,14 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
     MainWindow.cpp \
-    SysInfo.cpp
+    SysInfo.cpp \
+    SysInfoWidget.cpp \
+    CpuWidget.cpp
 
 HEADERS  += MainWindow.h \
-    SysInfo.h
+    SysInfo.h \
+    SysInfoWidget.h \
+    CpuWidget.h
 
 windows {
     SOURCES += SysInfoWindowsImpl.cpp
