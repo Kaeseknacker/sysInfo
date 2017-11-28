@@ -11,7 +11,7 @@ class SysInfoWidget : public QWidget {
     Q_OBJECT
 
 public:
-    explicit SysInfoWidget(QWidget *parent = nullptr,
+    explicit SysInfoWidget(QWidget *parent = 0,
                            int startDelayMs = 500,
                            int updateSeriesDelayMs = 500);
 

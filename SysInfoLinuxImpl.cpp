@@ -56,8 +56,8 @@ double SysInfoLinuxImpl::cpuLoadAverage() {
 
 
 double SysInfoLinuxImpl::memoryUsed() {
-    struct SysInfo memInfo;
-    SysInfo(&memInfo);
+    struct sysinfo memInfo;
+    sysinfo(&memInfo);
 
     qulonglong totalMemory = memInfo.totalram;
     totalMemory += memInfo.totalswap;
